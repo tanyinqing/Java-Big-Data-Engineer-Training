@@ -88,6 +88,8 @@
 
 ```html
 
+table>th>td*3  按tab键 快捷方式
+
 样式
  <style>
         table {
@@ -122,41 +124,91 @@
     </tr>
 </table>
 ```
-### Lists
-- ul li `unordered list`
-- ol li `ordered list`
-- dl dt dd `description list / description term / description data`
+### Lists 列表
+- ul li `unordered list` 无序
+- ol li `ordered list` 有序
+- dl dt dd `description list / description term 学期/ description data`描述列表 学期 数据
+
+```html
+  ul>li*3
+
+<dl>
+    <dt>老虎</dt>
+    <dd>是一种猫科动物</dd>
+    <dt>狮子</dt>
+    <dd>是一种猫科动物</dd>
+</dl>
+```
 
 ### Iframes
 - iframe
+```html
+<!--scrolling 表示是否有边框  这个是嵌入一部分页面-->
+<iframe src="http://bing.com" frameborder="0" width="500" height="300" scrolling="no"></iframe>
+```
 
-### Forms
+### Forms  表单
 - **form**
-  - action
+  - action 属性 表单提交的地址
   - method
 - **input**
   - name
-  - disabled
-  - checked
+  - disabled 不可以点击
+  - checked 默认选中
   - type `.attr`
-      - text
+      - text  文本
       - password
-      - radio
-      - checkbox
-      - button
-      - file
-      - hidden
+      - radio  单选框
+      - checkbox  多选框
+      - button 按钮
+      - file  提交文件
+      - hidden  存在该按钮 但用户看不到
 - **select**
   - **option**
     - selected `.attr`
-- **textarea**
+- **textarea**   用户的输入区域
 - **button**
+
+```html
+input:file 快捷学法  只有input和冒号后跟type的值才能用
+
+<body>
+<form action="http://bing.com/">
+    <input type="text" placeholder="username" value="tester" disabled="disabled"><br>
+    <input type="password" placeholder="password"><br>
+    <input type="radio" name="gender" checked="checked"> Male
+    <input type="radio" name="gender"> Female
+    <br>
+    <input type="checkbox" name="hobbies" checked="checked">Reading
+    <input type="checkbox" name="hobbies">TV
+    <input type="checkbox" name="hobbies">Movie
+    <input type="checkbox" name="hobbies">Game
+    <br>
+    <input type="week"><br>  h5新增属性 <!--许多不兼容-->
+    <select name="city" multiple="multiple">   <!--多选-->
+        <option value="Beijing">Beijing</option>
+        <option value="Shanghai">Shanghai</option>
+        <option value="Shenzhen" selected="selected">Shenzhen</option>
+    </select>
+    <br>
+    <textarea name=""cols="30" rows="5"></textarea>
+    <br>
+    <input type="button" value="TEST"><br>
+    <input type="file" name=""><br>
+    <input type="hidden" name="test-key" value="test-value">
+    <button>BUTTON</button>
+    <input type="submit" value="Sign up">
+    <input type="reset" value="RESET">
+</form>
+</body>
+```
+
 
 ### JavaScript
 - *`script`*
 - *`noscript`*
 
-### HTML Entities
+### HTML Entities 实体也就是特殊符号
 - `&copy;` - &copy;
 - `&trade;` - &trade;
 - `&reg;` - &reg;

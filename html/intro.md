@@ -1,6 +1,6 @@
-# Chapter 1 引言
+# Chapter 1 引言 第一个章节
 
-> Hyper Text Markup Language
+> Hyper Text Markup Language  超文本标记语言
 
 <h1 style="color:#f00;">Hello,HTML!</h1>
 

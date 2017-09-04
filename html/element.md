@@ -5,41 +5,44 @@
  
   > [文档类型声明](https://zh.wikipedia.org/wiki/HTML#.E6.A0.87.E8.AE.B0)
  
-### Headings
+### Headings  表头
 - html
 - body
 - head
 - title
 - base
 - meta
-    - charset
+    - charset  编码字符集
 - **`link`**
-- **`style`**
+- **`style`**  样式
 - **`script`**
-- h1~h6 `heading`
-- hr `horizontal line`
+- h1~h6 `heading` 内容占一行 是 块级元素
+- hr `horizontal line` 这个是横线
 
-### Paragraphs
-- p `paragraph`
-- ~~br~~ `break`
-- pre   `preformatted`
+### Paragraphs  段落
+- p `paragraph`  块级元素
+- ~~br~~ `break`  强制换行 不推荐使用
+- pre   `preformatted`  设置的格式显示时不改变
 
-### Styles
+### Styles  样式
 - *style* *`.attr`*
 
-### Text Formatting
-- b `bold`
-- em `emphasis`
-- i `italic`
-- small 
-- strong
-- sub `subscript`
-- sup `superscript`
-- ins `inserted`
-- del `deleted`
-- mark
+### Text Formatting   文本格式化
+- b `bold` 加粗
+- em `emphasis`斜体 强调
+- i `italic` 斜体
+- small  小 的
+- strong 加粗
+- sub `subscript` 下标
+- sup `superscript` 上标
+```html
+3<sub>2</sub><sup>3</sup>
+```
+- ins `inserted` 下划线
+- del `deleted` 中划线
+- mark  黄色特殊标记
  
-### Quotations
+### Quotations  引用
 - abbr  `abbreviation`
 - address
 - bdo   `bi-directional override`
@@ -47,35 +50,78 @@
 - cite
 - q `quotation`
 
-### Computer Code
+### Computer Code  计算机代码
 - code
 - kbd   `keyboard input`
 - samp  `sample output`
 - var   `variable`
 
-### Comments
-- `<!-- -->`
-- `<!--[if IE 8]><![endif]-->`
+### Comments  注释
+- `<!-- -->`  常规注释
+- `<!--[if IE 8]><![endif]-->`  条件注释  因为IE浏览器对样式支持比较差，所以
+条件注释
 
-### Links
-- a `anchor`
-    - href `hyper reference`
-    - target
-    - image as link
+### Links  链接
+- a `anchor` 锚点
+    - href `hyper reference`  超基准
+    - target 目标
+    - image as link  图片作为连接
     - id with href="#" as bookmark
-
+```html
+<a href="http://bing.com" target="_blank">必应</a>
+<a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9C%8B#.E8.B4.A7.E5.B8.81">诗</a>
+<a href="http://twitter.com/"><img src="img/test.jpg" alt="">推特</a>
+```
 ### Images
 - img   `image`
-
-### Tables
+```html
+<img src="img/test.jpg" alt="星球图片" height="200" title="title...">
+```
+### Tables 表格
 - table
-- tr    `table row`
-- th    `table heading`
-- td    `table data`
-  - `colspan`
-  - `rowspan`
-- caption
+- tr    `table row` 行
+- th    `table heading 表头`
+- td    `table data`数据
+  - `colspan` 跨列
+  - `rowspan` 跨行
+- caption  标题
 
+```html
+
+样式
+ <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #f00;
+        }
+    </style>
+
+
+<!--表格是分行写的-->
+<table cellpadding="5" border="1" cellspacing="0">
+    <caption>xxx 表</caption>
+    <tr>  <!--table row` 行-->
+        <th width="200">table head1</th>  <!--table heading 表头-->
+        <th width="100">table head2</th>
+        <th width="300">table head3</th>
+    </tr>
+    <tr>
+        <td style="text-align: right">table data1</td>
+        <td>table data2</td>
+        <td>table data3</td>
+    </tr>
+    <tr>
+        <td colspan="2">column span</td>   <!--跨两列-->
+        <td rowspan="2">table data3</td>   <!--跨两行-->
+    </tr>
+    <tr>
+        <td>table data1</td>
+        <td>table data2</td>
+    </tr>
+</table>
+```
 ### Lists
 - ul li `unordered list`
 - ol li `ordered list`

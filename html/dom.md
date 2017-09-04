@@ -33,4 +33,5 @@
 - `<body> has two children: <h1> and <p>`
 - `<h1> has one child: "DOM Lesson one"`Lesson  课
 - `<p> has one child: "Hello world!"`
-- `<h1> and <p> are siblings`
+- `<h1> and <p> are siblings`  兄弟姐妹
+ 

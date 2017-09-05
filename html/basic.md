@@ -8,7 +8,7 @@
 
 > 5 个概念
 
-1. **元素 element** `h1`
+1. **元素 element** `h1` 空元素没有结束标记
 2. **标记 tag**
     - 起始标记 start tag `<h1 style="color:#f00;">`
     - 结束标记 end tag `</h1>`

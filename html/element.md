@@ -11,7 +11,7 @@
 - head
 - title
 - base
-- meta
+- meta  元标记
     - charset  编码字符集
 - **`link`**
 - **`style`**  样式
@@ -88,7 +88,7 @@
 
 ```html
 
-table>th>td*3  按tab键 快捷方式
+table>th>td*3  按tab键 快捷方式  
 
 样式
  <style>
@@ -130,7 +130,7 @@ table>th>td*3  按tab键 快捷方式
 - dl dt dd `description list / description term 学期/ description data`描述列表 学期 数据
 
 ```html
-  ul>li*3
+  ul>li*3  快捷写法
 
 <dl>
     <dt>老虎</dt>
@@ -215,11 +215,17 @@ input:file 快捷学法  只有input和冒号后跟type的值才能用
 - `&yen;` - &yen;
 - `&nbsp;` - `none-breaking space`
 
-## Grouping tags
+```html
+&lt;img&gt;
+&copy;
+&trade;
+```
+
+## Grouping tags   块级元素
 - **div**   `division`
 - **span**
 
-## Block Elements and Inline Elements
+## Block Elements and Inline Elements 块级元素和行内元素
 
 - Block-level Element 块级元素
     - A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
@@ -227,7 +233,7 @@ input:file 快捷学法  只有input和冒号后跟type的值才能用
         - `h1 - h6`
         - `p`
         - `form`
-- Inline Element 行内元素
+- Inline Element 行内元素  根据内容 占位置
     - An inline element does not start on a new line and only takes up as much width as necessary.
         - `span`
         - `a`
@@ -235,8 +241,17 @@ input:file 快捷学法  只有input和冒号后跟type的值才能用
 
 ## URL
 
-> Uniform Resources Locators
+> Uniform Resources Locators  统一资源定位器
 
 ```html
 scheme://prefix.domain:prot/path/filename
+https://www.baidu.com/index.php?tn=site888_3_pg&ssl_s=1&ssl_c=ssl1_1504095ea3d&prec=2
+https://tanyinqing.gitbooks.io/java-big-data-engineer-training/content/html/html5.html
+
+https://  超文本传输协议
+prefix 前缀 www
+baidu 域名
+prot  端口号 百度是默认的
+/java-big-data-engineer-training/content/html/  路径名
+html5.html  文件名
 ```

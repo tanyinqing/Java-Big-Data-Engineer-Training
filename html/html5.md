@@ -4,13 +4,13 @@
 
 > HTML 5 - 2014
 
-- Semantic Elements
-    1.  header
+- Semantic Elements 目录元素
+    1.  header 头部
     2.  nav
     3.  section
     4.  aside
     5.  article
-    6.  footer
+    6.  footer 根部
     
 - Audio & Video
 

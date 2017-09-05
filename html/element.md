@@ -31,7 +31,7 @@
 - b `bold` 加粗
 - em `emphasis`斜体 强调
 - i `italic` 斜体
-- small  小 的
+- small  小号
 - strong 加粗
 - sub `subscript` 下标
 - sup `superscript` 上标
@@ -45,7 +45,7 @@
 ### Quotations  引用
 - abbr  `abbreviation`
 - address
-- bdo   `bi-directional override`
+- bdo   `bi-directional override`引用的反方向
 - blockquote    `quotaed section`
 - cite
 - q `quotation`
@@ -62,11 +62,11 @@
 条件注释
 
 ### Links  链接
-- a `anchor` 锚点
+- a `anchor` 锚点元素
     - href `hyper reference`  超基准
-    - target 目标
+    - target 目标 有这个元素 就在新页面打开
     - image as link  图片作为连接
-    - id with href="#" as bookmark
+    - id with href="#" as bookmark 书签
 ```html
 <a href="http://bing.com" target="_blank">必应</a>
 <a href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9C%8B#.E8.B4.A7.E5.B8.81">诗</a>
@@ -251,7 +251,7 @@ https://tanyinqing.gitbooks.io/java-big-data-engineer-training/content/html/html
 https://  超文本传输协议
 prefix 前缀 www
 baidu 域名
-prot  端口号 百度是默认的
+prot  端口号 百度是默认的443
 /java-big-data-engineer-training/content/html/  路径名
 html5.html  文件名
 ```

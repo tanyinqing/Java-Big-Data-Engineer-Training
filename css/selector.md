@@ -2,9 +2,10 @@
 
 ## CSS 的 3 种使用方式
 
-> 优先级： 内联 > 内部 = 外部
+> 优先级： 内联 > 内部 = 外部  
+后两种取决于谁后声明，后面的会覆盖前面的
 
-1. 内联样式 `Inline Styles`
+1. 内联样式 `Inline Styles` Markdown中仅支持内联样式
 
     > Source code
     
@@ -13,7 +14,7 @@
     <h1 style="color: #f00;">headline...</h1>
     ```
 
-2. 内部样式 `Internal Style Sheet`
+2. 内部样式 `Internal Style Sheet` ctrl+shift+回车为快捷键
 
     > Source code
     
@@ -46,6 +47,7 @@
     <!-- index.html -->
     <head>
         <link href="style.css">
+     <!--另一种写法  <link rel="stylesheet" href="intro.css">-->
     </head>
     <body>
     <h1>headline...</h1>
@@ -54,7 +56,7 @@
 
 ## CSS 选择器
 
-- 基本选择器
+- 基本选择器  ctrl+shift+回车为快捷键
     - 标记(元素/标签)选择器
     - `class` 选择器
       - 以 `.` 开头
@@ -68,6 +70,18 @@
       - `class` 和 `id` 同时存在并发生样式冲突时，`id` 优先级高
       - `class` 可以用空格引用多个值，`id` 不可以
     - 何时用 `class` 何时用 `id`?
+```html
+        h1 {  标记选择器
+            background-color: #ff0;
+        }
+         .red {  类别选择器  可以多次使用
+                    color: #f00;
+                }
+          #small {  id选择器 一个页面只能应用一次
+              font-size: 10px;
+          }
+
+```
 - 复合选择器
     - 交集选择器
       - 由元素选择器和 `class` 或 `id` 选择器直连构成
@@ -78,6 +92,27 @@
     - 派生选择器 `descendant selector`
       - 由多个基本选择器使用空格 ` ` 连接
       - 选择含有嵌套关系的标记
+      ```html
+      h2.red {  交集选择器 必须全符合才可以
+                  color: #f00;
+              }
+        
+      h2,
+      ul{  /*并集选择器 选择所有的标记 只要满足其中之一就可以应用这个样式*/
+          margin: 0; /*外边框*/
+          padding: 0; /*or ul dl 的属性*/
+          color: blue;
+      }
+
+        h1 i {  /*选择只要满足嵌套关系就可以了  派生选择器*/
+            color: red;
+        }
+  
+         h1>span {  /*选择满足嵌套关系 必须是子元素才可以 派生选择器*/
+            color: red;
+        }
+      
+      ```
 - 属性选择器
     - `[attribute]`	用于选取带有指定属性的元素
     - `[attribute=value]`	用于选取带有指定属性和值的元素
@@ -86,15 +121,73 @@
     - `[attribute^=value]`	匹配属性值以指定值开头的每个元素
     - `[attribute$=value]`	匹配属性值以指定值结尾的每个元素
     - `[attribute*=value]`	匹配属性值中包含指定**值**的每个元素
+    
+    
+    
+    ```html
+             [href] {
+                text-decoration: none;
+            } 
+           
+           [href="http://bing.com"] {
+                font-size: 3em;
+            }
+    
+            [title~=tesst] {
+                border: 1px solid red;
+            }
+    
+            [title^=tesst] {
+                border: 1px solid red;
+            }
+    
+            [class$=r] {
+                font-style: italic;
+            }
+    
+            h1[class*=e] {
+                font-family: Kartika;
+            }
+    
+            [title|=test] {
+                text-decoration: line-through;
+            }
+    ```
 - 伪类 `pseudo-class`
 
     > A pseudo-class is used to define a special **state** of an element.
 
-    - 锚点的 LoVe - HeAt 
+    - 锚点的 LoVe - HeAt  有顺序限制
       - `:link`
       - `:visited`
       - `:hover`
       - `:active`
+```html
+ a {
+            font-size: 5em;
+            text-decoration: none;
+        }
+
+        a:link {
+            background-color: #ff0;
+        }
+
+        a:visited {
+            background-color: cornflowerblue;
+        }
+
+        a:hover {
+            background-color: lightgreen;
+        }
+
+        a:active {
+            background-color: red;
+        }
+
+        div:hover {
+            cursor: crosshair;
+        }
+```
   
   > All
   
@@ -134,8 +227,19 @@
 
     > A CSS pseudo-element is used to style specified **parts** of an element.
   
-  - `::before`
+  - `::before`   之前加
   - `::after`
-  - `::first-letter`
+  - `::first-letter`  第一个字母
   - `::first-line`
-  - `::selection`
+  - `::selection`  
+  
+   ```html
+      a::before {
+               content: 'test';
+               color: red;
+           }
+         
+      input::selection {  输入字体，选中部分变颜色
+                background-color: yellow;
+            }
+    ```

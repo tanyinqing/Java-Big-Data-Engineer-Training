@@ -3,7 +3,7 @@
 - background
     - background-color
     - background-image
-    - background-repeat
+    - background-repeat 重复
     - background-attachment
     - background-position
 - color
@@ -24,14 +24,20 @@
     - list-style-position
     - list-style-image
 - border
-    - border-color
-    - border-style
-    - border-width
-- **margin**
+    - border-color 颜色
+    - border-style  样式
+    - border-width 宽度
+ ```html
+ border: 10px #ddd solid ; /*边框*/
+```
+- **margin**  外边界
     - margin-top
     - margin-right
     - margin-bottom
     - margin-left
+     ```html
+       margin: 50px 30px 20px 0px ;  /*上右下左 */
+    ```
 - **padding**
     - padding-top
     - padding-right
@@ -50,4 +56,4 @@
 - **float**
 - **clear**
 - *`overflow`*
-- cursor
+- cursor  光标的样式

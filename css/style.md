@@ -15,10 +15,10 @@
 - *`vertial-aline`*
 - line-height
     - `line-height: height;` 内容垂直居中
-- font-family
-- font-style
+- font-family  什么样的字体 楷体或宋体
+- font-style   斜体 或 粗体
 - font-size
-- font-weight
+- font-weight 字体的粗细
 - list-style
     - list-style-type
     - list-style-position

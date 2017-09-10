@@ -55,5 +55,5 @@
 - z-index
 - **float**
 - **clear**
-- *`overflow`*
+- *`overflow`*  当子元素的内容超过父元素大小时，决定超出的内容不显示或滚动显示
 - cursor  光标的样式

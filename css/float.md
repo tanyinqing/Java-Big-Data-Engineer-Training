@@ -83,11 +83,6 @@
     /* style.css  全部浮动是，容器无法把盒子全部包起来 */
     .clear {
         clear: both;
-    }
+    }   
     
-    #d1,
-    #d2,
-    #d3 {
-        float: left;
-    }
     ```

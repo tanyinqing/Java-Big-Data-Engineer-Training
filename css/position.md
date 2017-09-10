@@ -21,9 +21,9 @@
     - `bottom`
 - `z-index`
     - 对于已定位元素，值越大越靠近上边
-    ```html
-   position: static; 这个是默认的
- 
+    
+ ```html
+   position: static; 这个是默认的 
  相对定位
   #box1 {             
       /*position: fixed;固定定位，起始点不同 始终滚动在屏幕的相对位置  例如

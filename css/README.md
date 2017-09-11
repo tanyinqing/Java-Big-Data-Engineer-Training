@@ -9,8 +9,13 @@
 
 > 课外参考
 
-1. [W3 School](http://www.w3schools.com/css/default.asp)
-2. [CSS ZEN GARDEN](http://csszengarden.com/)
+1. [css英文学习网站  W3 School](http://www.w3schools.com/css/default.asp)
+2. [css禅语花园网页 CSS ZEN GARDEN](http://csszengarden.com/)
+
+可以下载index.html和style.css 两个文件
+项目里建立一个分支：
+https://tanyinqing.github.io/css-zen-garden/
+为单个上传项目添加页面效果
 
 > Outline
 
@@ -23,3 +28,17 @@
 7. [布局](layout.md)
 8. [常用样式](style.md)
 9. [预处理器](preprocessor.md)
+
+[盒子模型](https://github.com/tanyinqing/CSS_20170902/blob/master/box-model.html)
+[display](https://github.com/tanyinqing/CSS_20170902/blob/master/display.html)
+[浮动float](https://github.com/tanyinqing/CSS_20170902/blob/master/float.html)
+[字体的引入](https://github.com/tanyinqing/CSS_20170902/blob/master/font-family.html)
+[引入外部样式](https://github.com/tanyinqing/CSS_20170902/blob/master/intro.html)
+[学习简书的样式](https://github.com/tanyinqing/CSS_20170902/blob/master/jianshu.css)
+[运用div做一个布局](https://github.com/tanyinqing/CSS_20170902/blob/master/layout.html)
+[内外边界和边框](https://github.com/tanyinqing/CSS_20170902/blob/master/padding-border-margin.html)
+[position](https://github.com/tanyinqing/CSS_20170902/blob/master/position.html)
+[颜色的取值范围](https://github.com/tanyinqing/CSS_20170902/blob/master/selector_1.html)
+[属性选择器](https://github.com/tanyinqing/CSS_20170902/blob/master/selector_5.html)
+[伪类的使用](https://github.com/tanyinqing/CSS_20170902/blob/master/selector_6.html)
+[伪元素的使用](https://github.com/tanyinqing/CSS_20170902/blob/master/selector_7.html)

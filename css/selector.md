@@ -57,8 +57,8 @@
 ## CSS 选择器
 
 - 基本选择器  ctrl+shift+回车为快捷键
-    - 标记(元素/标签)选择器
-    - `class` 选择器
+    - 标记(元素/标签)选择器 以元素名开头
+    - `class` 选择器 也叫类别选择器
       - 以 `.` 开头
       - 自定义选择器名
     - `id` 选择器
@@ -80,7 +80,9 @@
           #small {  id选择器 一个页面只能应用一次
               font-size: 10px;
           }
-
+          
+class 可以用空格引用多个值，id 不可以
+<h1 id="blue" class="red bg-yellow">h1...</h1>
 ```
 - 复合选择器
     - 交集选择器
@@ -163,20 +165,21 @@
       - `:hover`
       - `:active`
 ```html
- a {
+这个是伪类的例子  操作的是某个状态
+        a { 
             font-size: 5em;
             text-decoration: none;
         }
 
-        a:link {
+        a:link {  链接
             background-color: #ff0;
         }
 
-        a:visited {
+        a:visited { 访问之后颜色改变
             background-color: cornflowerblue;
         }
 
-        a:hover {
+        a:hover {  点击时改变颜色
             background-color: lightgreen;
         }
 

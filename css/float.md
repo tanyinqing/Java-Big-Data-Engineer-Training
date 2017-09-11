@@ -12,6 +12,7 @@
   3. 占据浮动 box 的内容在浮动 box 的 `margin` 之外
   
  ```html
+ 3个盒子浮动  最后一个清除塌缩  浮动
 <div id="container">
     <div id="box1">box1...box1...box1...</div>
     <div id="box3">box3...</div>

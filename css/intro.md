@@ -7,8 +7,11 @@
 > Source code
 
 ```html
-<!-- index.html -->
-<link href="style.css">
+<!-- index.html  把样式表添加进来-->
+<link href="style.css"> 或者
+  <!--<link rel="stylesheet" href="intro.css">-->
+  
+
 <h1>Hello,CSS!</h1>
 ```
 

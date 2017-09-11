@@ -29,16 +29,17 @@ https://tanyinqing.github.io/css-zen-garden/
 8. [常用样式](style.md)
 9. [预处理器](preprocessor.md)
 
-[盒子模型](https://github.com/tanyinqing/CSS_20170902/blob/master/box-model.html)
-[display](https://github.com/tanyinqing/CSS_20170902/blob/master/display.html)
-[浮动float](https://github.com/tanyinqing/CSS_20170902/blob/master/float.html)
-[字体的引入](https://github.com/tanyinqing/CSS_20170902/blob/master/font-family.html)
-[引入外部样式](https://github.com/tanyinqing/CSS_20170902/blob/master/intro.html)
-[学习简书的样式](https://github.com/tanyinqing/CSS_20170902/blob/master/jianshu.css)
-[运用div做一个布局](https://github.com/tanyinqing/CSS_20170902/blob/master/layout.html)
-[内外边界和边框](https://github.com/tanyinqing/CSS_20170902/blob/master/padding-border-margin.html)
-[position](https://github.com/tanyinqing/CSS_20170902/blob/master/position.html)
-[颜色的取值范围](https://github.com/tanyinqing/CSS_20170902/blob/master/selector_1.html)
-[属性选择器](https://github.com/tanyinqing/CSS_20170902/blob/master/selector_5.html)
-[伪类的使用](https://github.com/tanyinqing/CSS_20170902/blob/master/selector_6.html)
-[伪元素的使用](https://github.com/tanyinqing/CSS_20170902/blob/master/selector_7.html)
+<a style="display: block" href="https://github.com/tanyinqing/CSS_20170902/blob/master/box-model.html">盒子模型</a>
+<a style="display: block" href="https://github.com/tanyinqing/CSS_20170902/blob/master/display.html">display</a>
+<a style="display: block" href="https://github.com/tanyinqing/CSS_20170902/blob/master/float.html">浮动float</a>
+<a style="display: block" href="https://github.com/tanyinqing/CSS_20170902/blob/master/font-family.html">字体的引入</a>
+<a style="display: block" href="https://github.com/tanyinqing/CSS_20170902/blob/master/intro.html">引入外部样式</a>
+<a style="display: block" href="https://github.com/tanyinqing/CSS_20170902/blob/master/jianshu.css">学习简书的样式</a>
+<a style="display: block" href="https://github.com/tanyinqing/CSS_20170902/blob/master/layout.html">运用div做一个布局</a>
+<a style="display: block" href="https://github.com/tanyinqing/CSS_20170902/blob/master/padding-border-margin.html">内外边界和边框</a>
+<a style="display: block" href="https://github.com/tanyinqing/CSS_20170902/blob/master/position.html">position</a>
+<a style="display: block" href="https://github.com/tanyinqing/CSS_20170902/blob/master/selector_1.html">颜色的取值范围</a>
+<a style="display: block" href="https://github.com/tanyinqing/CSS_20170902/blob/master/selector_5.html">属性选择器</a>
+<a style="display: block" href="https://github.com/tanyinqing/CSS_20170902/blob/master/selector_6.html">伪类的使用</a>
+<a style="display: block" href="https://github.com/tanyinqing/CSS_20170902/blob/master/selector_7.html">伪元素的使用</a>
+

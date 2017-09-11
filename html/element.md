@@ -233,11 +233,12 @@ input:file 快捷学法  只有input和冒号后跟type的值才能用
         - `h1 - h6`
         - `p`
         - `form`
-- Inline Element 行内元素  根据内容 占位置
+- Inline Element 行内元素  根据内容 占位置 
     - An inline element does not start on a new line and only takes up as much width as necessary.
         - `span`
         - `a`
         - `img`
+        宽高和内外边距设置不起作用，除非设置成其他属性
 
 ## URL
 

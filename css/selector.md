@@ -226,7 +226,7 @@ class 可以用空格引用多个值，id 不可以
   - `:valid`
   - `:visited`
     
-- 伪元素 `pseudo-element`
+- 伪元素 `pseudo-element` 选中一个元素的特殊的一部分
 
     > A CSS pseudo-element is used to style specified **parts** of an element.
   

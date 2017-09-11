@@ -15,13 +15,20 @@
     - `text-aline: center;` 内容水平居中
 - text-decoration
 - *`text-transform`*
-- text-indent
+- text-indent 设置2em 文本缩进
 - *`vertial-aline`*
 - line-height
     - `line-height: height;` 内容垂直居中 
 - font-family  什么样的字体 楷体或宋体 
 
 [google加载字体的网址](https://fonts.google.com/)
+```html
+加入这个链接  联网并且能翻墙的情况下就好加载这个字体
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+样式中加入属性
+font-family: 'Roboto', sans-serif; 意思是前面字体不存在的情况下就加载一个等宽字体
+
+```
 
 - font-style   斜体 或 粗体
 - font-size  字体的规格

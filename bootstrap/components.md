@@ -501,7 +501,7 @@
   </div>
   ```
   
-25. Modal `模态框`  [代码](https://github.com/thu/Bootstrap_20170902/blob/master/modal.html)
+25. Modal `模态框` 弹出框  [代码](https://github.com/thu/Bootstrap_20170902/blob/master/modal.html)
 	- button 
 		- `data-toggle="modal"` `data-target="#myModal"` 
 	- div 

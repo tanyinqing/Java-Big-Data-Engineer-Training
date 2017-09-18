@@ -44,7 +44,7 @@
       ```
       1.
       JAVA_HOME 新建
-      your_jdk_path
+      your_jdk_path  C:\Program Files\Java\jdk1.8.0_40
       
       2.
       Path 加在最前

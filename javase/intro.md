@@ -20,15 +20,15 @@
                 SQL
     - Java历史
         - 1991 SUN Green Project
-        - 1995 Java published
+        - 1995 Java published 正式版本
         - Java 语言的版本
-            - Java Standard Edition
-            - Java Enterprise Edition
-            - ~~Java Micro Edition~~
+            - Java Standard Edition  标准版本
+            - Java Enterprise Edition  企业版
+            - ~~Java Micro Edition~~   小型系统 不存在了
                     Android
                     iOS
     - Java特性
-        - Write once, Run anywhere
+        - Write once, Run anywhere 
                 跨平台
     - 程序分类
         - Application 应用程序
@@ -76,8 +76,8 @@
     }
     ```
     - Java 程序
-        - 编辑
-        - 编译
+        - 编辑  java文件
+        - 编译 class 文件
         - 运行
     - java 源文件
     - class 字节码文件 `byte code`

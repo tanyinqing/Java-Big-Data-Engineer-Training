@@ -1,61 +1,65 @@
 # Chapter 3 常用组件
 
-1. **Grid Basic** `栅格` `.col-*-`
+1. **Grid Basic** `栅格` `.col-*-` [代码](https://github.com/thu/Bootstrap_20170902/blob/master/grid.html)
+分块一共分为12块
 	- xs (for phones)
 	- sm (for tablets)
 	- md (for desktops)
-	- lg (for larger desktops)
+	- lg (for larger desktops) 表明不分隔 代表超大屏幕
   
   > [What is the difference among col-lg-*, col-md-* and col-sm-* in twitter bootstrap3?](http://stackoverflow.com/a/28654005/3414180)
 
-2. Typography `排版`
+2. Typography `排版`    [代码](https://github.com/thu/Bootstrap_20170902/blob/master/typo.html)
 	- h1-h6
 	- small
 	- mark
-	- abbr
-	- blockquote 
-	- .blockquote-reverse
-	- dl
-	- code
-	- kbd
+	- abbr  省略
+	- blockquote 标记
+	- .blockquote-reverse 样式 反方向
+	- dl    dt dd  预定义
+	- code   pre code 写代码
+	- kbd   键盘快捷键  把它放在背景中
 	- pre
-	- `.text-muted`
-	-  `.text-primary`
-	-   `.text-success`
+	以下文字颜色不同  加点表明是属性
+	- `.text-muted`   沉默
+	-  `.text-primary` 
+	-   `.text-success`  成功
 	-   `.text-info`
 	-   `.text-warning`
-	-   `.text-danger`
+	-   `.text-danger` 警告
+	背景色不一样
 	- `.bg-primary`
 	-  `.bg-success`
 	-   `bg-info`
 	-   `bg-warning`
 	-   `.bg-danger`
 	
-3. Tables 
-	- `.table` + `.table-striped` + `.table-borderd` + `.table-hover` +  `.table-condensed`
-	- **Responsive Tables** 
+3. Tables  [代码](https://github.com/thu/Bootstrap_20170902/blob/master/table.html)
+	- `.table` + `.table-striped 表格分栏` + `.table-borderd 框` + `.table-hover  鼠标悬停` +  `.table-condensed`
+	- **Responsive Tables 响应式表格** 
 	- wrapper div  
 		- `.table-responsive`
 		- 
-4. Images 
-	-`.img-rounded` `.img-circle` `.img-thumbnail`
-	- **Responsive Images** `.img-responsive`
-	- **Responsive Embeds** 
+4. Images [代码](https://github.com/thu/Bootstrap_20170902/blob/master/image.html)
+	-`.img-rounded  圆角` `.img-circle 圆形` `.img-thumbnail 缩略图`
+	- **Responsive Images 响应式设计** `.img-responsive`
+	- **Responsive Embeds 响应式嵌入内容** 
 		- div 
-	        - `.embed-responsive` + `.embed-responsive-16by9` + `.embed-responsive-4by3` 
+	        - `.embed-responsive` + `.embed-responsive-16by9 `宽屏 + `.embed-responsive-4by3 普屏` 
 	    - iframe embed video object
 	        - `.embed-responsive-item`  
 	        
-5. Jumbotron `超大屏幕 - 巨幕` 
-	- `.jumbotron`
-	- inside container
-	- outside container
+5. Jumbotron `超大屏幕 - 巨幕` [代码](https://github.com/thu/Bootstrap_20170902/blob/master/jumbotron.html)
+	- `.jumbotron` 
+	- inside container 里面
+	- outside container 外面
 	
-6. Wells `浅容器` 
-	- div 
-		- `.well` + `.well-sm` + `well-lg`
+6. Wells `浅容器`  加入一个浅色边框
+	- div   [代码](https://github.com/thu/Bootstrap_20170902/blob/master/jumbotron.html)
+		- `.well 这个先加` + `.well-sm` + `well-lg`
 		
-7. Alerts 
+7. Alerts  警告
+[代码](https://github.com/thu/Bootstrap_20170902/blob/master/alert.html)
 	- div 
 	    - `.alert`
 	    - \+ `.alert-success` + `.alert-info` + `.alert-warning` + `.alert-danger`
@@ -65,6 +69,8 @@
 		- div + `alert-dissmissible` + `fade` + `in`
 		- a `.close` `data-dismiss="alert"`
 	
+	  可以点x关闭的提示框
+	  
 	      ```html
 	      <div class="alert alert-success alert-dismissable">
 	          <a href="#" class="close" data-dismiss="alert">&times;</a>
@@ -72,7 +78,7 @@
 	      </div>
 	      ```
     
-8. Buttons button / input / a `.btn`
+8. Buttons button / input / a `.btn` [代码](https://github.com/thu/Bootstrap_20170902/blob/master/button.html)
 	- styles
 		- ``.btn-default`
 		- `.btn-primary`
@@ -89,17 +95,17 @@
 		- `.btn-xs`
 		
 	- 	status	
-		- `.btn-block`
-		- `.active` 
-		- `.disabled`
+		- `.btn-block`  块元素
+		- `.active`   活动的
+		- `.disabled`  不可点击
         
-9. Button Groups 
+9. Button Groups 按钮组
 	- `.btn-group`
 	- \+ `.btn-group-lg`
 	- \+ `.btn-group-md`
 	- \+ `.btn-group-sm`
 	- \+ `.btn-group-xs`
-	- \+ `.btn-group-vertical`
+	- \+ `.btn-group-vertical`  按钮垂直排列
 	- \+ `.btn-group-justified`
     - **each** `button` / `input` wrap div with `.btn-group` class
 	- Dropdown Menus 
@@ -107,14 +113,14 @@
 	    - `.dropdown-toggle` `data-toggle="dropdown"`
     - span `.caret`
     - ul `.dropdown-menu` `role="menu"`
-
+ 按钮组实现下拉菜单
       ```html
       <div class="btn-group">
         <button class="btn btn-primary">Apple</button>
         <button class="btn btn-primary">Samsung</button>
         <div class="btn-group">
           <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-            Sony <span class="caret"></span>
+            Sony <span class="caret"></span>  小三角
           </button>
           <ul class="dropdown-menu" role="menu">
             <li><a href="#">Tablet</a></li>
@@ -124,38 +130,72 @@
       </div>
       ```
       
-10. Glyphicons `[ɡlɪf]` `字体图标`
-	- span 
+10. Glyphicons `[ɡlɪf]` `字体图标` 以及如何引入在线小图标
+[代码](https://github.com/thu/Bootstrap_20170902/blob/master/glyphicon.html)
+	- span  元素 下面是样式
 		- `.glyphicon` 
 		- \+ `.glyphicon-*`
 		
+		- 阿里巴巴图标字体 [alibaba iconfont](http://www.iconfont.cn/)
+        		 - 点击购物车按钮加入
+        		 - 购物车中添加到项目
+        		 - Unicode
+        
+        	```html
+        	<style>
+        		@font-face {
+        		  font-family: 'iconfont';  /* project id 418173 */
+        		  src: url('//at.alicdn.com/t/font_418173_dnpxpzlz0an0cnmi.eot');
+        		  src: url('//at.alicdn.com/t/font_418173_dnpxpzlz0an0cnmi.eot?#iefix') format('embedded-opentype'),
+        		  url('//at.alicdn.com/t/font_418173_dnpxpzlz0an0cnmi.woff') format('woff'),
+        		  url('//at.alicdn.com/t/font_418173_dnpxpzlz0an0cnmi.ttf') format('truetype'),
+        		  url('//at.alicdn.com/t/font_418173_dnpxpzlz0an0cnmi.svg#iconfont') format('svg');
+        	}
+        
+        	.icon-font {
+        		font-family: iconfont,serif;
+        	}
+        
+        	.icon-heart:before {
+        		content: '\e66b';
+        	}
+        	</style>
+        	```
+        
+        	```html
+        	<span class="icon-font">&#xe667;</span>
+        	<span class="icon-font icon-heart"></span>
+        	```
+		
+		
 11. Badges / Labels `徽章` `标签` 
+[代码](https://github.com/thu/Bootstrap_20170902/blob/master/glyphicon.html)
 	- badge span 
 	    - `.badge`
 	- label span
 	    - `.label` 
 	    - \+ `.label-default, +.label-primary, .label-success, .label-info, .label-warning .label-danger`
 	    
-12. Progress Bars 
-	- outer div `.progress` 
-	- inner div `.progress-bar` `style="width: 12%;"` 
-		- `.progress-bar-success` `.progress-bar-info` `.progress-bar-warning` `.progress-bar-danger`
+12. Progress Bars  进度条 [代码](https://github.com/thu/Bootstrap_20170902/blob/master/progress-bar.html)
+	- outer div `.progress` 外层的部分
+	- inner div `.progress-bar` `style="width: 12%;进度刻度"`  里面的部分
+		- `.progress-bar-success` `.progress-bar-info` `.progress-bar-warning` `.progress-bar-danger` 不同的颜色
 	    - `.progress-bar-striped` `.active`
 	    
-13. Pagination 
+13. Pagination  分页  [代码](https://github.com/thu/Bootstrap_20170902/blob/master/pagination.html)
 	- ul
 		- `.pagination` + `.pagination-lg` + `.pagination-sm` 
 	- li
 		- \+ `.active` + `.disabled`
 	- ul 
 		- `.breadcrumb`
-14. Pager 
+14. Pager  上一页和下一页
   - ul
       - `.pager` 
   - li
       - \+ `.previous` + `.next`
       
-15. List Groups 
+15. List Groups  列表组
 	- ul / div 
 		- `.list-group` 
 	- li / a 
@@ -308,7 +348,7 @@
 	  </div>
 	  ```
   
-20. Navbar nav 
+20. Navbar nav 导航条 [代码](https://github.com/thu/Bootstrap_20170902/blob/master/nav.html)
 	- nav
 		- `.navbar` 
 		- \+ `.navbar-default` + `.navbar-inverse` + `.navbar-fixed-*` 
@@ -350,6 +390,7 @@
 	    <nav class="navbar navbar-inverse">
 	      <div class="container-fluid">
 	        <div class="navbar-header">
+      适配手机适配三个白条  不出现横向滚动条
 	          <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 	            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
@@ -373,7 +414,7 @@
 	    </nav>
 	    ```
     
-21. Forms 
+21. Forms  表单 [代码](https://github.com/thu/Bootstrap_20170902/blob/master/form.html)
 	 - form
 		- `.form-inline` `.form-horizontal` 
 	 - div
@@ -416,7 +457,7 @@
 	    - `.media-heading`
 	    - `.media-top` `.media-middle` `.media-bottom`
 
-24. Carousel `旋转木马` 
+24. Carousel `旋转木马` 走马灯或图片轮播 [代码](https://github.com/thu/Bootstrap_20170902/blob/master/carousel.html)
 	- div
 		- `id="myCarousel"` `.carousel` `.slide` `data-ride="carousel"` 
 	- ol
@@ -460,7 +501,7 @@
   </div>
   ```
   
-25. Modal `模态框` 
+25. Modal `模态框`  [代码](https://github.com/thu/Bootstrap_20170902/blob/master/modal.html)
 	- button 
 		- `data-toggle="modal"` `data-target="#myModal"` 
 	- div 
@@ -490,6 +531,7 @@
 	    ```
 
 27. Popover `弹出框` 
+[代码](https://github.com/thu/Bootstrap_20170902/blob/master/google-material-lite.html)
 	- a
 	    - `data-toggle="popover"` 
 	    - `title=""` 

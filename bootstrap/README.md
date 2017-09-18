@@ -10,7 +10,7 @@
 
 > 课外参考
 
-1. [Bootstrap 3 Tutorial](http://www.w3schools.com/bootstrap/default.asp)
+1. [Bootstrap 3 Tutorial 网站教程](http://www.w3schools.com/bootstrap/default.asp)
 
 > Outline
 

@@ -17,6 +17,7 @@
         - 类的定义
         ```java
         访问限定修饰符 class 类名
+  以下是泛型 只是继承了类型参数列表
         [<类型参数列表 extends 父类型名 & 父类型名 & ...>]
         [extends 父类名]
         [implents 接口名列表] {
@@ -143,7 +144,7 @@
       */
       ```
     - Java 语言里，类是单继承的（接口可以多实现）
-    - `instanceof` 判断对象是否是类的实例
+    - `instanceof` 判断对象是否是某个类的实例
 3. 多态 `polymorphism`
     - 静态多态性
         - 同一个类内部（也可以发生于子类和父类之间）
@@ -159,14 +160,14 @@
         - 子类是否调用、子类在何处调用父类的方法根据方法的定义和需求确定
 4. 包 `package` 
     - 管理代码的目录结构
-    - 通常都是公司或组织或学校域名的反写
+    - 通常都是公司或组织或学校域名的反写 cn.tan.edit
     - 包名都是小写字母
     - 所有的类都要放在包里
     - `package` 打包语句，必须是类里的第一行代码
     - `import` 导包语句
     - Java 的包
-        - java.lang Java 的语言包，使用这个包的类不需要导入 `common sense`
-    - `FQN` - Full Qualified Name 全限定名
+        - java.lang Java 的语言包，使用这个包的类不需要导入 `common sense 常识`
+    - `FQN` - Full Qualified Name 全限定名 连同包名加类名
 5. 封装 `encapsulation`
     - 访问限定修饰符
         - 类的访问限定修饰符
